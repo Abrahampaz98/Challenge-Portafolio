@@ -1,0 +1,95 @@
+body::-webkit-scrollbar{
+    background:rgba(5, 7, 12, 0.40); 
+} body::-webkit-scrollbar-thumb{
+    background-color:dimgrey;
+    border-radius:1em;
+}
+.inicio{
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 12%, rgba(53,51,205,1) 62%);
+}
+.inicio__letras{
+    font-family: 'Poppins', sans-serif;
+    flex-direction: column;
+    padding: 14em 0 0 3em;
+}
+.inicio__titulo{
+    color: white;
+    font-weight: 700;
+    font-size: 5em;
+}
+.inicio__developer{
+    color: gainsboro;
+    font-size: 2em;
+    font-weight: 500;
+}
+.inicio__imagen__inicio{
+    position: relative;
+    width: 40vw;
+    left:5em;
+    top:3.5em;
+}
+.inicio__imagen__cono{
+    position: relative;
+    width:8vw;
+    bottom:23em;
+    animation: traslate 3s infinite;
+    transform: translateY(-7px);
+    animation-direction: alternate;
+}
+.inicio__imagen__cuadrado{
+    position: relative;
+    width:8vw;
+    right:0.8em;
+    bottom:1.8em;
+    animation: traslateBajo 3s infinite;
+    transform: translateY(-7px);
+    animation-direction: alternate;
+}
+.inicio__imagen__dona{
+    position: relative;
+    width:8vw;
+    bottom:34.5em;
+    left: 15em;
+    animation: traslate 3s infinite;
+    transform: translateY(-7px);
+    animation-direction: alternate;
+}
+.inicio__imagen__mediaLuna{
+    position: relative;
+    width:8vw;
+    left:23em;
+    bottom:2em;
+    animation: traslateBajo 3s infinite;
+    transform: translateY(-7px);
+    animation-direction: alternate;
+}
+.inicio__imagen__mediaDona{
+    position: relative;
+    width:8vw;
+    bottom: 27em;
+    right:20em;
+    animation: traslate 3s infinite;
+    transform: translateY(-7px);
+    animation-direction: alternate;
+}
+@keyframes traslate {
+    0%{ transform: translateY(7px);}
+}
+@keyframes traslateBajo {
+    0%{ transform: translateY(3px);}
+}
+@media screen and (max-width:890px){
+    .inicio{
+        width:auto;
+        
+        flex-direction: column;
+    }
+    .inicio__titulo{
+        font-size: 3em;
+    }
+    .inicio__imagen__cono,.inicio__imagen__cuadrado,.inicio__imagen__dona,.inicio__imagen__mediaDona,.inicio__imagen__mediaLuna{
+        display: none;
+    }
+}

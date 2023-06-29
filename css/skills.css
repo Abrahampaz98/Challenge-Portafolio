@@ -1,0 +1,147 @@
+.skills{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    height: 101vh;
+    color: white;
+    background: linear-gradient(90deg, rgba(0,151,178,1) 15%, rgba(126,217,87,1) 51%);
+}
+.skills__titulo{
+    text-transform: uppercase;
+    font-size: 5em;
+    padding: 1em 0em 1em 1em;
+}
+.skills__titulo__foco{
+    width: 0.5em;
+    position: relative;
+    bottom: 0.6em;
+}
+.skills__container__scroll{
+    padding-left:5em;
+}
+.container::-webkit-scrollbar{
+    width:2em;
+}
+.container::-webkit-scrollbar-thumb{
+    background-color: azure;
+    border-radius:2em;
+}
+.container{
+    background:rgba(5, 7, 12, 0.40); 
+    display:flex;
+    flex-direction:row;
+    justify-content:left;
+    max-width:35vw;
+    overflow-x: scroll;
+    border-radius: 20px;
+}
+.card:nth-child(1){
+    background-image: url(/img/html-5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card:nth-child(2){
+    background-image: url(/img/css-3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card:nth-child(3){
+    background-image: url(/img/js.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card:nth-child(4){
+    background-image: url(/img/java.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card:nth-child(5){
+    background-image: url(/img/csharp.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card:nth-child(6){
+    background-image: url(/img/sql.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card:nth-child(7){
+    background-image: url(/img/dot_net.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.card{
+    text-align:center;
+    min-height:20em;
+    min-width:30em;
+}
+.skills__imagen__skills{
+    width: 20vw ;
+    position: relative;
+    left: 60em;
+    bottom: 30em;
+}
+.skills__imagen__piramide{
+    position: relative;
+    width:7vw;
+    bottom:61em;
+    left: 47em;
+    animation: translate 3s infinite;
+    transform: translateY();
+    animation-direction:alternate;
+}
+.skills__imagen__cuadrado{
+    position: relative;
+    width:8vw;
+    bottom:59em;
+    left: 53em;
+    animation: translate 3s infinite;
+    transform: translateY(50px);
+    animation-direction:alternate;
+}
+.skills__imagen__media_luna{
+    position: relative;
+    width:6vw;
+    bottom:29em;
+    left: 45em;
+    animation: translate 3s infinite;
+    transform: translateY(-15px);
+    animation-direction:alternate;
+}
+.skills__imagen__cono{
+    position: relative;
+    width:6vw;
+    bottom:50em;
+    animation: rotate 3s infinite;
+    animation-direction:alternate;
+}
+@keyframes translate{
+    0%{transform: translateY(5px);}
+}
+@keyframes rotate{
+    0%{transform: rotate(360deg);}
+}
+@media screen and (max-width:890px){
+    .skills{
+        width:auto;
+    }
+    .skills__imagen__cono,
+    .skills__imagen__skills,
+    .skills__imagen__piramide,
+    .skills__imagen__media_luna,
+    .skills__imagen__cuadrado{
+        display: none;
+    }
+    .skills__titulo{
+        padding: 1em 0 1em 0.8em ;
+    }
+    .skills__container__scroll{
+        padding-left: 1em;
+    }
+    .container{
+        max-width:90vw;
+    }
+    .card{
+        min-height:20em;
+        min-width:23em;
+    }
+}

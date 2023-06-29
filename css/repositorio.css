@@ -1,0 +1,89 @@
+.repositorio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color: white;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(93,224,230,1) 15%, rgba(0,74,173,1) 51%);
+}
+.repositorio__link{
+    display: flex;
+    flex-direction: column;
+}
+.repositorio__titulo{
+    display: flex;
+    flex-direction: column;
+    padding:1.5em 0 0 3em;
+    font-size:3.5em;
+}
+.repositorio__imagen{
+    width: 40em;
+    padding-top: 1.5em;
+    opacity: 0.7;
+}
+.repositorio__imagen:hover{
+    cursor:cell;
+    opacity: 1;
+}
+.repositorio__figuras__cohete{
+    position: relative;
+    width: 20em;
+    top: 9em;
+    left:17em;
+}
+.repositorio__figuras__media_dona{
+    position: relative;
+    width:8vw;
+    top: 24em;
+    animation: traslate 3s infinite;
+    transform: translateY(-20px);
+    animation-direction: alternate;
+}
+.repositorio__figuras__dona{
+    position: relative;
+    width:8vw;
+    top: 15em;
+    animation: traslate 3s infinite;
+    transform: translateY(-20px);
+    animation-direction: alternate;
+}
+.repositorio__figuras__cono{
+    position: relative;
+    width:8vw;
+    top: 7em;
+    left: 5em;
+    animation: traslate 3s infinite;
+    transform: translateY(-20px);
+    animation-direction: alternate;
+}
+.repositorio__figuras__media_luna{
+    position: relative;
+    width:8vw;
+    animation: traslate_medialuna 3s infinite;
+    transform: translateY(-7px);
+    animation-direction: alternate;
+}
+@keyframes traslate {
+    0%{ transform: translateY(20px);}
+}
+@keyframes traslate_medialuna {
+    0%{ transform: translateY(30px);}
+}
+@media screen and (max-width:890px){
+    .repositorio{
+        flex-direction: column;
+        width:auto;
+    }
+    .repositorio__figuras__cohete,.repositorio__figuras__cono,.repositorio__figuras__dona,.repositorio__figuras__media_dona,.repositorio__figuras__media_luna{
+        display: none;
+    }
+    .repositorio__titulo{
+        padding:1.5em 0 0 0.2em;
+    }
+    .repositorio__imagen{
+        width: 24em;
+        padding-top: 10em;
+    }
+}

@@ -1,0 +1,136 @@
+.sobre-mi{
+    font-family: 'Poppins', sans-serif;
+    width: 98.9vw;
+    height: 100vh;
+    background: linear-gradient(90deg, rgba(255,222,89,1) 25%, rgba(255,145,77,1) 56%);
+}
+.sobre-mi__titulo{
+    color: white;
+    font-weight: 700;
+    font-size:2.9em;
+    padding: 1.5em 0 0 1.5em;
+    text-transform: uppercase;
+}
+.sobre-mi__presentacion{
+    text-align:start;
+    padding: 1.8em 0 0 ;
+    position: absolute;
+    left: 28em;
+}
+.sobre-mi__presentacion__titulo{
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 700;
+    padding-bottom: 0.3em;
+    white-space: pre-line;
+}
+.sobre-mi__presentacion__parrafo{
+    font-size:1rem;
+    color: white;
+    white-space: pre-line;
+    font-weight:600;
+}
+.sobre-mi__presentacion__imagen{
+    position: relative;
+    width: 50vw;
+    right: 10rem;
+}
+.sobre-mi__imagen__laptop{
+    position: relative;
+    width:15vw;
+    left:40em;
+    bottom:24em;
+}
+.sobre-mi__imagen__mando{
+    position: relative;
+    width:13vw;
+    right:33em;
+    bottom:30em;
+    animation: scale 300ms infinite;
+    transform: scale();
+    animation-direction: alternate;
+}
+@keyframes scale{
+    0%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale();
+    }
+}
+.sobre-mi__imagen__cilindro{
+    position: relative;
+    left:22em;
+    bottom:42.8em;
+    width:7vw;
+    animation: translate 3s infinite;
+    transform: translateY(-10px);
+    animation-direction:alternate;
+}
+.sobre-mi__imagen__piramide{
+    position: relative;
+    width:8vw;
+    right:60em;
+    bottom:15em;
+    animation: translate 3s infinite;
+    transform: translateY(-10px);
+    animation-direction:alternate;
+}
+.sobre-mi__imagen__cuadrado{
+    position: relative;
+    width:5vw;
+    bottom:15em;
+    animation: translate 3s infinite;
+    transform: translateY(-10px);
+    animation-direction:alternate;
+}
+.sobre-mi__imagen__cono{
+    position: relative;
+    left:0em;
+    bottom:42.8em;
+    width:7vw;
+    animation: translate 3s infinite;
+    transform: translateY(-10px);
+    animation-direction:alternate;
+}
+@keyframes translate{
+    0%{
+        transform: translateY(20px);
+    }
+}
+@media screen and (max-width:890px){
+    .sobre-mi{
+        width:auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .sobre-mi__imagen__cilindro,
+    .sobre-mi__imagen__cono,
+    .sobre-mi__imagen__cuadrado,
+    .sobre-mi__imagen__laptop,
+    .sobre-mi__imagen__piramide,
+    .sobre-mi__imagen__mando{
+        display: none;
+    }
+    .sobre-mi__presentacion__imagen{
+        width: 80vw;
+        right: 25em;
+        top: 15em;
+    }
+    .sobre-mi__presentacion{
+        display: flex;
+        flex-direction: column;
+    }
+    .sobre-mi__presentacion__titulo{
+        display: flex;
+        position: relative;
+        right:19em;
+        top: 6em;
+    }
+        .sobre-mi__presentacion__parrafo{
+        display: flex;
+        position: relative;
+        right:25em;
+        top:9em;
+    }
+}
