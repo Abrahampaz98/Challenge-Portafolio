@@ -35,37 +35,37 @@
     border-radius: 20px;
 }
 .card:nth-child(1){
-    background-image: url(/img/html-5.png);
+    background-image: url(./img/html-5.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 .card:nth-child(2){
-    background-image: url(/img/css-3.png);
+    background-image: url(./img/css-3.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 .card:nth-child(3){
-    background-image: url(/img/js.png);
+    background-image: url(./img/js.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 .card:nth-child(4){
-    background-image: url(/img/java.png);
+    background-image: url(./img/java.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 .card:nth-child(5){
-    background-image: url(/img/csharp.png);
+    background-image: url(./img/csharp.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 .card:nth-child(6){
-    background-image: url(/img/sql.png);
+    background-image: url(./img/sql.png);
     background-repeat: no-repeat;
     background-position: center;
 }
 .card:nth-child(7){
-    background-image: url(/img/dot_net.png);
+    background-image: url(./img/dot_net.png);
     background-repeat: no-repeat;
     background-position: center;
 }
